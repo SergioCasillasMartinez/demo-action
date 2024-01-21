@@ -8,7 +8,7 @@ def multiplicacion(x: int, y: int):
     return x * y
 
 def division(x: int, y: int):
-    if (x != 0 or y != 0):
+    try:
         return x / y
-    else:
-        return 0
+    except:
+        print("No se puede divir entre 0")
