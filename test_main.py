@@ -18,7 +18,9 @@ class Test(unittest.TestCase):
 
         self.assertEqual(division(1,1), 1)
         self.assertEqual(division(25,5), 5)
-        self.assertEqual(division(5,0), 0)
+        #Controlamos las divisiones entre 0
+        with self.assertEqual(ZeroDivisionError):
+            self.assertEqual(division(5,0), 0)
 
 if __name__ == '__main__':
     unittest.main()
