@@ -8,7 +8,7 @@ class Test(unittest.TestCase):
         self.assertEqual(suma(-1,1), 0)
         self.assertEqual(suma(-1,-1), -2)
 
-        self.assertEqual(resta(1,2), 1)
+        self.assertEqual(resta(2,1), 1)
         self.assertEqual(resta(5,2), 3)
         self.assertEqual(resta(1,2), -1)
 
